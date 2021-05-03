@@ -2,7 +2,7 @@ Dark colorscheme for [Kakoune][kak].
 
 Uses only colors from the 256 (Xterm) color palette.
 
-Heavily inspired by [Apprentice][apprentice].
+Inspired by [Apprentice][apprentice].
 
 ![](./screenshot1.png)
 
