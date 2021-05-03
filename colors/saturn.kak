@@ -1,6 +1,7 @@
 # COLORS
 
 declare-option str fg                'rgb:BCBCBC'
+declare-option str fg_dim            'rgb:A8A8A8'
 declare-option str bg                'rgb:262626'
 declare-option str bg_dim            'rgb:303030'
 declare-option str black             'rgb:121212'
@@ -59,8 +60,8 @@ set-face global SecondaryCursorEol   "%opt{black},%opt{yellow}+fg"
 
 set-face global MenuForeground       "%opt{brwhite},%opt{white}"
 set-face global MenuBackground       "%opt{fg},%opt{brblack}"
-set-face global MenuInfo             "%opt{black}"
-set-face global Information          "%opt{fg},%opt{bg_dim}"
+set-face global MenuInfo             "%opt{fg_dim}"
+set-face global Information          "%opt{fg_dim},%opt{bg_dim}"
 set-face global Error                "%opt{brwhite},%opt{red}"
 
 set-face global StatusLine           "%opt{fg}"
