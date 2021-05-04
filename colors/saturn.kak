@@ -64,7 +64,7 @@ set-face global MenuInfo             "%opt{fg_dim}"
 set-face global Information          "%opt{fg_dim},%opt{bg_dim}"
 set-face global Error                "%opt{brwhite},%opt{red}"
 
-set-face global StatusLine           "%opt{fg}"
+set-face global StatusLine           "%opt{fg_dim}"
 set-face global StatusLineMode       "%opt{black},%opt{bryellow}"
 set-face global StatusLineInfo       "%opt{brblue}"
 set-face global StatusLineValue      "%opt{brwhite},%opt{blue}"
