@@ -2,7 +2,7 @@
 
 declare-option str fg                'rgb:BCBCBC'
 declare-option str fg_dim            'rgb:A8A8A8'
-declare-option str bg                'rgb:262626'
+declare-option str bg                'rgb:1C1C1C'
 declare-option str bg_dim            'rgb:303030'
 declare-option str black             'rgb:121212'
 declare-option str red               'rgb:AF5F5F'
@@ -49,10 +49,10 @@ set-face global mono                 "%opt{brgreen}"
 
 # BUILT IN FACES
 
-set-face global Default              "%opt{fg},default"
+set-face global Default              "%opt{fg},%opt{bg}"
 
-set-face global PrimarySelection     "%opt{black},%opt{brblue}+fg"
-set-face global SecondarySelection   "%opt{black},%opt{blue}+fg"
+set-face global PrimarySelection     "default,rgba:5F87AF80"
+set-face global SecondarySelection   "default,rgba:5F87AF40"
 set-face global PrimaryCursor        "%opt{bg},%opt{fg}+fg"
 set-face global SecondaryCursor      "%opt{black},%opt{white}+fg"
 set-face global PrimaryCursorEol     "%opt{black},%opt{yellow}+fg"
@@ -80,3 +80,5 @@ set-face global MatchingChar         "default,%opt{brblack}"
 set-face global Whitespace           "%opt{brblack}+f"
 
 set-face global LineFlagErrors       "%opt{brred}"
+set-face global DiagnosticError      "%opt{brwhite},%opt{yellow}"
+set-face global DiagnosticWarning    "%opt{brwhite},%opt{red}"
