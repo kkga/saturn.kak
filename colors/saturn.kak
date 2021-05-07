@@ -44,7 +44,7 @@ set-face global header               "%opt{brcyan}+b"
 set-face global block                "%opt{magenta}"
 set-face global bullet               "%opt{blue}"
 set-face global list                 "%opt{yellow}"
-set-face global link                 "%opt{cyan}"
+set-face global link                 "%opt{brcyan}"
 set-face global mono                 "%opt{brgreen}"
 
 # BUILT IN FACES
