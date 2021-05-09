@@ -21,6 +21,11 @@ declare-option str brmagenta         'rgb:8787AF'
 declare-option str brcyan            'rgb:5FAFAF'
 declare-option str brwhite           'rgb:FFFFFF'
 
+declare-option str bg_error          'rgba:AF5F5F80'
+declare-option str bg_warning        'rgba:AF870080'
+declare-option str bg_sel_p          'rgba:5F87AF80'
+declare-option str bg_sel_s          'rgba:5F87AF40'
+
 # CODE
 
 set-face global value                "%opt{brred}"
@@ -51,8 +56,8 @@ set-face global mono                 "%opt{brgreen}"
 
 set-face global Default              "%opt{fg},%opt{bg}"
 
-set-face global PrimarySelection     "default,rgba:5F87AF80"
-set-face global SecondarySelection   "default,rgba:5F87AF40"
+set-face global PrimarySelection     "default,%opt{bg_sel_p}"
+set-face global SecondarySelection   "default,%opt{bg_sel_s}"
 set-face global PrimaryCursor        "%opt{bg},%opt{fg}+fg"
 set-face global SecondaryCursor      "%opt{black},%opt{white}+fg"
 set-face global PrimaryCursorEol     "%opt{black},%opt{yellow}+fg"
@@ -61,7 +66,7 @@ set-face global SecondaryCursorEol   "%opt{black},%opt{yellow}+fg"
 set-face global MenuForeground       "%opt{brwhite},%opt{white}"
 set-face global MenuBackground       "%opt{fg},%opt{brblack}"
 set-face global MenuInfo             "%opt{fg_dim}"
-set-face global Information          "%opt{fg_dim},%opt{bg_dim}"
+set-face global Information          "%opt{fg},%opt{bg_dim}"
 set-face global Error                "%opt{brwhite},%opt{red}"
 
 set-face global StatusLine           "%opt{fg_dim}"
@@ -80,5 +85,5 @@ set-face global MatchingChar         "default,%opt{brblack}"
 set-face global Whitespace           "%opt{brblack}+f"
 
 set-face global LineFlagErrors       "%opt{brred}"
-set-face global DiagnosticError      "%opt{brwhite},%opt{yellow}"
-set-face global DiagnosticWarning    "%opt{brwhite},%opt{red}"
+set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error}+b"
+set-face global DiagnosticWarning    "%opt{brwhite},%opt{bg_warning}+b"
