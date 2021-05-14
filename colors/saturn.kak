@@ -80,9 +80,9 @@ set-face global LineNumbers          "%opt{white}"
 set-face global LineNumberCursor     "%opt{fg}"
 set-face global LineNumbersWrapped   "%opt{brblack}"
 
-set-face global BufferPadding        "%opt{brblack}"
+set-face global BufferPadding        "%opt{bg_dim}"
 set-face global MatchingChar         "default,%opt{brblack}"
-set-face global Whitespace           "%opt{brblack}+f"
+set-face global Whitespace           "%opt{bg_dim}+f"
 
 set-face global LineFlagErrors       "%opt{brred}"
 set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error}+b"
