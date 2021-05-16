@@ -25,6 +25,8 @@ declare-option str bg_error          'rgba:AF5F5F80'
 declare-option str bg_warning        'rgba:AF870080'
 declare-option str bg_sel_p          'rgba:5F87AF80'
 declare-option str bg_sel_s          'rgba:5F87AF40'
+declare-option str bg_ref            'rgba:5F875F40'
+declare-option str bg_ref_bind       'rgba:5F875F80'
 
 # CODE
 
@@ -87,3 +89,5 @@ set-face global Whitespace           "%opt{bg_dim}+f"
 set-face global LineFlagErrors       "%opt{brred}"
 set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error}+b"
 set-face global DiagnosticWarning    "%opt{brwhite},%opt{bg_warning}+b"
+set-face global Reference            "default,%opt{bg_ref}"
+set-face global ReferenceBind        "default,%opt{bg_ref_bind}+b"
