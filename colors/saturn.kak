@@ -70,7 +70,7 @@ set-face global MenuForeground       "%opt{purewhite},%opt{white}"
 set-face global MenuBackground       "%opt{fg},%opt{brblack}"
 set-face global MenuInfo             "%opt{fg_dim}"
 set-face global Information          "%opt{fg},%opt{bg_dim}"
-set-face global Error                "%opt{purewhite},%opt{red}"
+set-face global Error                "%opt{purewhite},%opt{bg_error}"
 
 set-face global StatusLine           "%opt{fg_dim}"
 set-face global StatusLineMode       "%opt{black},%opt{bryellow}"
