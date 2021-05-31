@@ -33,16 +33,16 @@ declare-option str bg_ref_bind       'rgba:5F875F80'
 
 set-face global value                "%opt{brcyan}"
 set-face global type                 "%opt{brmagenta}"
-set-face global variable             "%opt{fg}"
+set-face global variable             "%opt{brgreen}"
 set-face global module               "%opt{brblue}"
-set-face global function             "%opt{fg}"
+set-face global function             "%opt{brred}"
 set-face global string               "%opt{brcyan}"
 set-face global keyword              "%opt{brblue}"
 set-face global operator             "%opt{bryellow}"
-set-face global attribute            "%opt{brgreen}"
+set-face global attribute            "%opt{fg}"
 set-face global comment              "%opt{white}"
 set-face global documentation        comment
-set-face global meta                 "%opt{brmagenta}"
+set-face global meta                 "%opt{bryellow}"
 set-face global builtin              "%opt{fg}+b"
 
 # MARKUP
@@ -88,7 +88,7 @@ set-face global MatchingChar         "default,%opt{brblack}"
 set-face global Whitespace           "%opt{bg_dim}+f"
 
 set-face global LineFlagErrors       "%opt{brred}"
-set-face global DiagnosticError      "%opt{purewhite},%opt{bg_error}+b"
-set-face global DiagnosticWarning    "%opt{purewhite},%opt{bg_warning}+b"
+set-face global DiagnosticError      "%opt{purewhite},%opt{bg_error}"
+set-face global DiagnosticWarning    "%opt{purewhite},%opt{bg_warning}"
 set-face global Reference            "default,%opt{bg_ref}"
 set-face global ReferenceBind        "default,%opt{bg_ref_bind}+b"
