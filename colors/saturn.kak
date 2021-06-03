@@ -22,6 +22,7 @@ declare-option str brcyan            'rgb:5FAFAF'
 declare-option str brwhite           'rgb:d0d0d0'
 declare-option str purewhite         'rgb:FFFFFF'
 
+declare-option str bg_info           'rgba:5F87AF80'
 declare-option str bg_error          'rgba:AF5F5F80'
 declare-option str bg_warning        'rgba:AF870080'
 declare-option str bg_sel_p          'rgba:5F87AF80'
@@ -69,7 +70,7 @@ set-face global SecondaryCursorEol   "%opt{black},%opt{yellow}+fg"
 set-face global MenuForeground       "%opt{purewhite},%opt{white}"
 set-face global MenuBackground       "%opt{fg},%opt{brblack}"
 set-face global MenuInfo             "%opt{fg_dim}"
-set-face global Information          "%opt{black},%opt{green}"
+set-face global Information          "%opt{purewhite},%opt{bg_info}"
 set-face global Error                "%opt{purewhite},%opt{bg_error}"
 
 set-face global StatusLine           "%opt{fg_dim}"
