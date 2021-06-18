@@ -51,7 +51,7 @@ set-face global builtin              "%opt{fg}+b"
 
 set-face global title                "%opt{brcyan}+b"
 set-face global header               "%opt{brcyan}+b"
-set-face global block                "%opt{magenta}"
+set-face global block                "%opt{brmagenta}"
 set-face global bullet               "%opt{blue}"
 set-face global list                 "%opt{yellow}"
 set-face global link                 "%opt{brblue}"
