@@ -53,7 +53,7 @@ set-face global title                "%opt{brcyan}+b"
 set-face global header               "%opt{brcyan}+b"
 set-face global block                "%opt{brmagenta}"
 set-face global bullet               "%opt{blue}"
-set-face global list                 "%opt{yellow}"
+set-face global list                 "%opt{bryellow}"
 set-face global link                 "%opt{brblue}"
 set-face global mono                 "%opt{brgreen}"
 
