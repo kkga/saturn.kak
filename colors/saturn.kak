@@ -93,7 +93,7 @@ set-face global MatchingChar         "default,%opt{brblack}"
 
 # EXTRA FACES
 
-set-face global Search               +bui@MatchingChar
+set-face global Search               +bu@MatchingChar
 set-face global LineFlagErrors       "%opt{brred}"
 set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error}"
 set-face global DiagnosticWarning    "%opt{brwhite},%opt{bg_warning}"
