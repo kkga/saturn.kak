@@ -2,11 +2,10 @@
 
 declare-option str fg                'rgb:BCBCBC'
 declare-option str fg_dim            'rgb:A8A8A8'
-declare-option str bg                'rgb:262626'
-declare-option str bg_dim            'rgb:303030'
+declare-option str bg                'rgb:121212'
 declare-option str bg_bright         'rgb:606060'
 declare-option str bg_accent         'rgb:005F5F'
-declare-option str black             'rgb:121212'
+declare-option str black             'rgb:262626'
 declare-option str red               'rgb:AF5F5F'
 declare-option str green             'rgb:5F875F'
 declare-option str yellow            'rgb:AF8700'
@@ -27,9 +26,9 @@ declare-option str purewhite         'rgb:FFFFFF'
 declare-option str bg_info           'rgba:005F5F80'
 declare-option str bg_error          'rgba:AF5F5F80'
 declare-option str bg_warning        'rgba:AF870080'
-declare-option str bg_sel_p          'rgba:5F87AF80'
-declare-option str bg_sel_s          'rgba:5F87AF40'
-declare-option str bg_ref            'rgba:005F5F40'
+declare-option str bg_sel_p          'rgba:005F8780'
+declare-option str bg_sel_s          'rgba:005F8730'
+declare-option str bg_ref            'rgba:005F5F30'
 declare-option str bg_ref_bind       'rgba:005F5F80'
 
 # CODE
@@ -75,7 +74,7 @@ set-face global MenuInfo             "%opt{fg_dim}"
 set-face global Information          "%opt{brwhite},%opt{bg_info}"
 set-face global Error                "%opt{purewhite},%opt{bg_error}"
 
-set-face global StatusLine           "%opt{fg_dim},%opt{bg_dim}"
+set-face global StatusLine           "%opt{fg_dim},%opt{black}"
 set-face global StatusLineMode       "%opt{black},%opt{bryellow}"
 set-face global StatusLineInfo       "%opt{brblue}"
 set-face global StatusLineValue      "%opt{purewhite},%opt{blue}"
@@ -86,7 +85,7 @@ set-face global LineNumbers          "%opt{white}"
 set-face global LineNumberCursor     "%opt{fg}"
 set-face global LineNumbersWrapped   "%opt{brblack}"
 
-set-face global BufferPadding        "%opt{bg_dim}"
+set-face global BufferPadding        "%opt{black}"
 set-face global Whitespace           "%opt{brblack}+f"
 set-face global WrapMarker           Whitespace
 set-face global MatchingChar         "default,%opt{brblack}"
