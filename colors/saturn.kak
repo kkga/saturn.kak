@@ -23,24 +23,24 @@ declare-option str brcyan            'rgb:5FAFAF'
 declare-option str brwhite           'rgb:d0d0d0'
 declare-option str purewhite         'rgb:FFFFFF'
 
-declare-option str bg_info           'rgba:005F5F80'
+declare-option str bg_info           'rgba:005F8780'
 declare-option str bg_error          'rgba:AF5F5F80'
 declare-option str bg_warning        'rgba:AF870080'
 declare-option str bg_sel_p          'rgba:005F8780'
 declare-option str bg_sel_s          'rgba:005F8730'
-declare-option str bg_ref            'rgba:005F5F30'
-declare-option str bg_ref_bind       'rgba:005F5F80'
+declare-option str bg_ref            'rgba:A8A8A830'
+declare-option str bg_ref_bind       'rgba:5F878780'
 
 # CODE
 
 set-face global value                "%opt{brcyan}"
 set-face global type                 "%opt{brmagenta}"
-set-face global variable             "%opt{brgreen}"
+set-face global variable             "%opt{bryellow}"
 set-face global module               "%opt{brblue}"
 set-face global function             "%opt{fg}"
-set-face global string               "%opt{brcyan}"
-set-face global keyword              "%opt{fg}+b"
-set-face global operator             "%opt{bryellow}"
+set-face global string               "%opt{brgreen}"
+set-face global keyword              "%opt{brmagenta}+b"
+set-face global operator             "%opt{white}"
 set-face global attribute            "%opt{fg}"
 set-face global comment              "%opt{white}"
 set-face global documentation        comment
@@ -69,10 +69,10 @@ set-face global PrimaryCursorEol     "%opt{black},%opt{yellow}+fg"
 set-face global SecondaryCursorEol   "%opt{black},%opt{yellow}+fg"
 
 set-face global MenuForeground       "%opt{brwhite},%opt{bg_info}"
-set-face global MenuBackground       "%opt{fg},%opt{brblack}"
+set-face global MenuBackground       "%opt{fg},%opt{black}"
 set-face global MenuInfo             "%opt{fg_dim}"
 set-face global Information          "%opt{brwhite},%opt{bg_info}"
-set-face global Error                "%opt{purewhite},%opt{bg_error}"
+set-face global Error                "%opt{brwhite},%opt{bg_error}"
 
 set-face global StatusLine           "%opt{fg_dim},%opt{black}"
 set-face global StatusLineMode       "%opt{black},%opt{bryellow}"
@@ -88,13 +88,13 @@ set-face global LineNumbersWrapped   "%opt{brblack}"
 set-face global BufferPadding        "%opt{black}"
 set-face global Whitespace           "%opt{brblack}+f"
 set-face global WrapMarker           Whitespace
-set-face global MatchingChar         "default,%opt{brblack}"
+set-face global MatchingChar         @Information
 
 # EXTRA FACES
 
-set-face global Search               +bu@MatchingChar
 set-face global LineFlagErrors       "%opt{brred}"
 set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error}"
 set-face global DiagnosticWarning    "%opt{brwhite},%opt{bg_warning}"
 set-face global Reference            "default,%opt{bg_ref}"
-set-face global ReferenceBind        "%opt{brwhite},%opt{bg_ref_bind}+b"
+set-face global ReferenceBind        +bu@Reference
+set-face global Search               +bu@Reference
