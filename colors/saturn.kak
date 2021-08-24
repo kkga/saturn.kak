@@ -3,8 +3,6 @@
 declare-option str fg                'rgb:BCBCBC'
 declare-option str fg_dim            'rgb:A8A8A8'
 declare-option str bg                'rgb:121212'
-declare-option str bg_bright         'rgb:606060'
-declare-option str bg_accent         'rgb:005F5F'
 declare-option str black             'rgb:262626'
 declare-option str red               'rgb:AF5F5F'
 declare-option str green             'rgb:5F875F'
@@ -23,7 +21,7 @@ declare-option str brcyan            'rgb:5FAFAF'
 declare-option str brwhite           'rgb:d0d0d0'
 declare-option str purewhite         'rgb:FFFFFF'
 
-declare-option str bg_info           'rgba:005F8780'
+declare-option str bg_info           'rgba:44444480'
 declare-option str bg_error          'rgba:AF5F5F80'
 declare-option str bg_warning        'rgba:AF870080'
 declare-option str bg_sel_p          'rgba:005F8780'
@@ -69,10 +67,10 @@ set-face global PrimaryCursorEol     "%opt{black},%opt{yellow}+fg"
 set-face global SecondaryCursorEol   "%opt{black},%opt{yellow}+fg"
 
 set-face global MenuForeground       "%opt{brwhite},%opt{bg_info}"
-set-face global MenuBackground       "%opt{fg},%opt{black}"
+set-face global MenuBackground       "%opt{fg_dim},%opt{black}"
 set-face global MenuInfo             "%opt{fg_dim}"
-set-face global Information          "%opt{brwhite},%opt{bg_info}"
-set-face global Error                "%opt{brwhite},%opt{bg_error}"
+set-face global Information          "%opt{fg},%opt{bg_info}"
+set-face global Error                "%opt{fg},%opt{bg_error}"
 
 set-face global StatusLine           "%opt{fg_dim},%opt{black}"
 set-face global StatusLineMode       "%opt{black},%opt{bryellow}"
