@@ -51,8 +51,8 @@ set-face global builtin              "%opt{fg}+b"
 
 # MARKUP
 
-set-face global title                "%opt{bryellow},%opt{grey}+b"
-set-face global header               "%opt{bryellow},%opt{black}+b"
+set-face global title                "%opt{fg},%opt{black}+b"
+set-face global header               "%opt{fg},%opt{black}+b"
 set-face global block                "%opt{brmagenta}"
 set-face global bullet               "%opt{blue}"
 set-face global list                 "%opt{bryellow}"
