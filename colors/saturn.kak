@@ -99,4 +99,4 @@ set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error_inlay}"
 set-face global DiagnosticWarning    "%opt{brwhite},%opt{bg_warning_inlay}"
 set-face global Reference            "default,%opt{bg_ref}"
 set-face global ReferenceBind        +bu@Reference
-set-face global Search               +bu@Reference
+set-face global Search               +u
