@@ -43,7 +43,7 @@ set-face global function             "%opt{fg}"
 set-face global string               "%opt{brgreen}"
 set-face global keyword              "%opt{brmagenta}+b"
 set-face global operator             "%opt{cyan}"
-set-face global attribute            "%opt{fg}"
+set-face global attribute            "%opt{blue}"
 set-face global comment              "%opt{brblack}"
 set-face global documentation        comment
 set-face global meta                 "%opt{brcyan}"
