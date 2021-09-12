@@ -27,9 +27,9 @@ declare-option str bg_error          'rgb:AF5F00'
 
 declare-option str hotpink           'rgb:D75FAF'
 
-declare-option str bg_info_inlay     'rgba:5F875F90'
-declare-option str bg_error_inlay    'rgba:AF5F5F90'
-declare-option str bg_warning_inlay  'rgba:AF870080'
+declare-option str bg_info_inlay     'rgba:5F875F60'
+declare-option str bg_error_inlay    'rgba:AF5F5F60'
+declare-option str bg_warning_inlay  'rgba:AF870060'
 declare-option str bg_sel_p          'rgba:005F8780'
 declare-option str bg_sel_s          'rgba:005F8730'
 declare-option str bg_ref            'rgba:A8A8A830'
