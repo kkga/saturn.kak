@@ -27,13 +27,14 @@ declare-option str bg_error          'rgb:AF5F00'
 
 declare-option str hotpink           'rgb:D75FAF'
 
-declare-option str bg_info_inlay     'rgba:5F875F60'
-declare-option str bg_error_inlay    'rgba:AF5F5F60'
-declare-option str bg_warning_inlay  'rgba:AF870060'
-declare-option str bg_sel_p          'rgba:005F8780'
-declare-option str bg_sel_s          'rgba:005F8730'
-declare-option str bg_ref            'rgba:A8A8A830'
-declare-option str bg_ref_bind       'rgba:5F878780'
+declare-option str bg_info_inlay     'rgba:5F875F40'
+declare-option str bg_error_inlay    'rgba:AF5F5F40'
+declare-option str bg_warning_inlay  'rgba:AF870040'
+
+declare-option str bg_sel_p          'rgba:5FAFAF60'
+declare-option str bg_sel_s          'rgba:5FAFAF30'
+
+declare-option str bg_ref            'rgba:A8A8A840'
 
 # CODE
 
@@ -101,4 +102,4 @@ set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error_inlay}"
 set-face global DiagnosticWarning    "%opt{brwhite},%opt{bg_warning_inlay}"
 set-face global Reference            "default,%opt{bg_ref}"
 set-face global ReferenceBind        +bu@Reference
-set-face global Search               +u
+set-face global Search               "%opt{brwhite},default+ibu"
