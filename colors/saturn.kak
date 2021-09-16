@@ -49,7 +49,7 @@ set-face global attribute            "%opt{brblue}"
 set-face global comment              "%opt{brblack}"
 set-face global documentation        comment
 set-face global meta                 "%opt{cyan}"
-set-face global builtin              "%opt{fg}+b"
+set-face global builtin              "%opt{brwhite}+b"
 
 # MARKUP
 
