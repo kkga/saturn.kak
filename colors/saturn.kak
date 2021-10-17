@@ -3,6 +3,7 @@
 declare-option str fg                'rgb:BCBCBC'
 declare-option str fg_dim            'rgb:A8A8A8'
 declare-option str bg                'rgb:1C1C1C'
+declare-option str bg_br             'rgb:303030'
 declare-option str black             'rgb:121212'
 declare-option str red               'rgb:AF5F5F' #unused
 declare-option str green             'rgb:5F875F'
@@ -20,7 +21,7 @@ declare-option str brmagenta         'rgb:8787AF'
 declare-option str brcyan            'rgb:5FAFAF'
 declare-option str brwhite           'rgb:ffffff'
 
-declare-option str bg_info           'rgb:444444'
+declare-option str bg_info           'rgb:005F5F'
 declare-option str bg_warning        'rgb:878700'
 declare-option str bg_error          'rgb:AF5F00'
 
@@ -74,8 +75,8 @@ set-face global SecondaryCursorEol   "%opt{black},%opt{brblack}+fg"
 
 set-face global MenuForeground       "%opt{brwhite},%opt{white}"
 set-face global MenuInfo             "%opt{fg_dim}"
-set-face global MenuBackground       "default,%opt{brblack}"
-set-face global Information          "%opt{brwhite},%opt{white}+F"
+set-face global MenuBackground       "default,%opt{bg_br}"
+set-face global Information          "%opt{brwhite},%opt{bg_info}+F"
 set-face global Error                "%opt{brwhite},%opt{bg_error}+F"
 
 set-face global StatusLine           "%opt{fg_dim},default"
