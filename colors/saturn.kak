@@ -3,6 +3,7 @@
 declare-option str fg                'rgb:BCBCBC'
 declare-option str fg_dim            'rgb:A8A8A8'
 declare-option str bg                'rgb:1C1C1C'
+declare-option str bg_alt            'rgb:262626'
 declare-option str bg_br             'rgb:303030'
 declare-option str black             'rgb:121212'
 declare-option str red               'rgb:AF5F5F' #unused
@@ -46,7 +47,7 @@ set-face global function             "%opt{bryellow}+b"
 set-face global string               "%opt{green}"
 set-face global keyword              "%opt{blue}+b"
 set-face global operator             "%opt{fg_dim}"
-set-face global attribute            "%opt{brblue}"
+set-face global attribute            "%opt{cyan}"
 set-face global comment              "%opt{white}"
 set-face global documentation        comment
 set-face global meta                 "%opt{cyan}"
@@ -88,18 +89,23 @@ set-face global Prompt               "%opt{brblue},default"
 
 set-face global LineNumbers          "%opt{white}"
 set-face global LineNumberCursor     "%opt{fg}"
-set-face global LineNumbersWrapped   "%opt{brblack}"
+set-face global LineNumbersWrapped   "%opt{bg_br}"
 
-set-face global BufferPadding        "%opt{brblack}"
-set-face global Whitespace           "%opt{brblack}+f"
+set-face global BufferPadding        "%opt{bg_br}"
+set-face global Whitespace           "%opt{bg_br}+f"
 set-face global WrapMarker           Whitespace
-set-face global MatchingChar         "%opt{hotpink},%opt{brblack}+F"
+set-face global MatchingChar         "%opt{hotpink},%opt{bg_br}+bF"
 
 # EXTRA FACES
 
+# kak-lsp
 set-face global LineFlagErrors       "%opt{brred}"
 set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error_inlay}"
 set-face global DiagnosticWarning    "%opt{brwhite},%opt{bg_warning_inlay}"
 set-face global Reference            "default,%opt{bg_ref}"
 set-face global ReferenceBind        +bu@Reference
-set-face global Search               "%opt{brwhite},default+ibu"
+
+# ui.kak (https://github.com/kkga/ui.kak)
+set-face global Search               "%opt{brwhite}+iu"
+set-face global CursorLine           "default,%opt{bg_alt}"
+set-face global CursorColumn         "default,%opt{bg_alt}"
