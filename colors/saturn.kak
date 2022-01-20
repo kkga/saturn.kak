@@ -104,19 +104,21 @@ set-face global DiagnosticError      "%opt{brred},%opt{bg_error_inlay}"
 set-face global DiagnosticWarning    "%opt{brred},%opt{bg_warning_inlay}"
 set-face global Reference            "default,%opt{bg_ref}"
 set-face global ReferenceBind        +bu@Reference
+
+# Infobox faces
 set-face global InfoDefault               Information
-set-face global InfoBlock                 Information
-set-face global InfoBlockQuote            Information
-set-face global InfoBullet                Information
-set-face global InfoHeader                title
-set-face global InfoLink                  Information
-set-face global InfoLinkMono              Information
-set-face global InfoMono                  Information
-set-face global InfoRule                  Information
-set-face global InfoDiagnosticError       Information
-set-face global InfoDiagnosticHint        Information
-set-face global InfoDiagnosticInformation Information
-set-face global InfoDiagnosticWarning     Information
+set-face global InfoBlock                 block
+set-face global InfoBlockQuote            block
+set-face global InfoBullet                bullet
+set-face global InfoHeader                header
+set-face global InfoLink                  link
+set-face global InfoLinkMono              header
+set-face global InfoMono                  mono
+set-face global InfoRule                  comment
+set-face global InfoDiagnosticError       InlayDiagnosticError
+set-face global InfoDiagnosticHint        InlayDiagnosticHint
+set-face global InfoDiagnosticInformation InlayDiagnosticInfo
+set-face global InfoDiagnosticWarning     InlayDiagnosticWarning
 
 # ui.kak (https://github.com/kkga/ui.kak)
 set-face global Search               "%opt{brwhite}+iu"
