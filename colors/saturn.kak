@@ -28,9 +28,9 @@ declare-option str bg_error          'rgb:AF5F00'
 
 declare-option str hotpink           'rgb:D75FAF'
 
-declare-option str bg_info_inlay     'rgba:5F875F40'
-declare-option str bg_error_inlay    'rgba:AF5F5F40'
-declare-option str bg_warning_inlay  'rgba:AF870040'
+declare-option str bg_info_inlay     'rgba:5F875F24'
+declare-option str bg_error_inlay    'rgba:AF5F5F24'
+declare-option str bg_warning_inlay  'rgba:AF870024'
 
 declare-option str bg_sel_p          'rgba:5FAFAF48'
 declare-option str bg_sel_s          'rgba:87AFD724'
@@ -49,7 +49,7 @@ set-face global keyword              "%opt{blue}+b"
 set-face global operator             "%opt{fg_dim}"
 set-face global attribute            "%opt{cyan}"
 set-face global comment              "%opt{white}"
-set-face global documentation        comment
+set-face global documentation        default
 set-face global meta                 "%opt{cyan}"
 set-face global builtin              "%opt{bryellow}+b"
 
@@ -100,10 +100,23 @@ set-face global MatchingChar         "%opt{hotpink},%opt{bg_br}+bF"
 
 # kak-lsp
 set-face global LineFlagErrors       "%opt{brred}"
-set-face global DiagnosticError      "%opt{brwhite},%opt{bg_error_inlay}"
-set-face global DiagnosticWarning    "%opt{brwhite},%opt{bg_warning_inlay}"
+set-face global DiagnosticError      "%opt{brred},%opt{bg_error_inlay}"
+set-face global DiagnosticWarning    "%opt{brred},%opt{bg_warning_inlay}"
 set-face global Reference            "default,%opt{bg_ref}"
 set-face global ReferenceBind        +bu@Reference
+set-face global InfoDefault               Information
+set-face global InfoBlock                 Information
+set-face global InfoBlockQuote            Information
+set-face global InfoBullet                Information
+set-face global InfoHeader                title
+set-face global InfoLink                  Information
+set-face global InfoLinkMono              Information
+set-face global InfoMono                  Information
+set-face global InfoRule                  Information
+set-face global InfoDiagnosticError       Information
+set-face global InfoDiagnosticHint        Information
+set-face global InfoDiagnosticInformation Information
+set-face global InfoDiagnosticWarning     Information
 
 # ui.kak (https://github.com/kkga/ui.kak)
 set-face global Search               "%opt{brwhite}+iu"
