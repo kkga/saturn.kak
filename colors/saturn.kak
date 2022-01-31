@@ -6,11 +6,11 @@ declare-option str bg                'rgb:121212'
 declare-option str bg_alt            'rgb:1C1C1C'
 declare-option str bg_br             'rgb:303030'
 declare-option str black             'rgb:121212'
-declare-option str red               'rgb:AF5F5F' #unused
+declare-option str red               'rgb:AF5F5F'
 declare-option str green             'rgb:5F875F'
 declare-option str yellow            'rgb:AF8700'
 declare-option str blue              'rgb:5F87AF'
-declare-option str magenta           'rgb:5F5F87' #unused
+declare-option str magenta           'rgb:5F5FAF'
 declare-option str cyan              'rgb:5F8787'
 declare-option str white             'rgb:6c6c6c'
 declare-option str brblack           'rgb:444444'
