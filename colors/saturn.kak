@@ -10,7 +10,7 @@ declare-option str red               'rgb:AF5F5F'
 declare-option str green             'rgb:5F875F'
 declare-option str yellow            'rgb:AF8700'
 declare-option str blue              'rgb:5F87AF'
-declare-option str magenta           'rgb:5F5FAF'
+declare-option str magenta           'rgb:5F5F87'
 declare-option str cyan              'rgb:5F8787'
 declare-option str white             'rgb:6c6c6c'
 declare-option str brblack           'rgb:444444'
@@ -43,13 +43,13 @@ set-face global value                "%opt{red}"
 set-face global type                 "%opt{magenta}"
 set-face global variable             "%opt{yellow}"
 set-face global module               "%opt{cyan}"
-set-face global function             default+b
+set-face global function             "%opt{fg}+b"
 set-face global string               "%opt{green}"
 set-face global keyword              "%opt{blue}"
 set-face global operator             "%opt{fg_dim}"
 set-face global attribute            "%opt{cyan}"
 set-face global comment              "%opt{white}"
-set-face global documentation        default
+set-face global documentation        "%opt{fg_dim}"
 set-face global meta                 "%opt{cyan}"
 set-face global builtin              "%opt{bryellow}+b"
 
@@ -67,8 +67,8 @@ set-face global mono                 "%opt{brgreen}"
 
 set-face global Default              "%opt{fg},%opt{bg}"
 
-set-face global PrimarySelection     "default,%opt{bg_sel_p}"
-set-face global SecondarySelection   "default,%opt{bg_sel_s}"
+set-face global PrimarySelection     "%opt{fg},%opt{bg_sel_p}"
+set-face global SecondarySelection   "%opt{fg},%opt{bg_sel_s}"
 set-face global PrimaryCursor        "%opt{black},%opt{hotpink}+fg"
 set-face global SecondaryCursor      "%opt{black},%opt{blue}+fg"
 set-face global PrimaryCursorEol     "%opt{black},%opt{fg}+fg"
@@ -76,8 +76,8 @@ set-face global SecondaryCursorEol   "%opt{black},%opt{brblack}+fg"
 
 set-face global MenuForeground       "%opt{brwhite},%opt{white}"
 set-face global MenuInfo             "%opt{fg_dim}"
-set-face global MenuBackground       "default,%opt{bg_br}"
-set-face global Information          "default,%opt{bg_info}"
+set-face global MenuBackground       "%opt{fg},%opt{bg_br}"
+set-face global Information          "%opt{fg},%opt{bg_info}"
 set-face global Error                "%opt{brwhite},%opt{bg_error}"
 
 set-face global StatusLine           "%opt{fg_dim},%opt{bg_alt}"
@@ -85,7 +85,7 @@ set-face global StatusLineInfo       "%opt{blue}"
 set-face global StatusLineMode       "%opt{bg},%opt{brblue}"
 set-face global StatusLineValue      "%opt{bg},%opt{brblue}"
 set-face global StatusCursor         "%opt{bg},%opt{brblue}"
-set-face global Prompt               "%opt{brblue},default"
+set-face global Prompt               "%opt{fg},%opt{bg_alt}"
 
 set-face global LineNumbers          "%opt{white}"
 set-face global LineNumberCursor     "%opt{fg}"
