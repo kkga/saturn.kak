@@ -32,8 +32,8 @@ declare-option str bg_info_inlay     'rgba:5F875F24'
 declare-option str bg_error_inlay    'rgba:AF5F5F24'
 declare-option str bg_warning_inlay  'rgba:AF870024'
 
-declare-option str bg_sel_p          'rgba:5FAFAF48'
-declare-option str bg_sel_s          'rgba:87AFD724'
+declare-option str bg_sel_p          'rgba:5FAFAF32'
+declare-option str bg_sel_s          'rgba:87AFD716'
 
 declare-option str bg_ref            'rgba:A8A8A840'
 
@@ -67,8 +67,8 @@ set-face global mono                 "%opt{brgreen}"
 
 set-face global Default              "%opt{fg},%opt{bg}"
 
-set-face global PrimarySelection     "%opt{fg},%opt{bg_sel_p}"
-set-face global SecondarySelection   "%opt{fg},%opt{bg_sel_s}"
+set-face global PrimarySelection     "default,%opt{bg_sel_p}"
+set-face global SecondarySelection   "default,%opt{bg_sel_s}"
 set-face global PrimaryCursor        "%opt{black},%opt{hotpink}+fg"
 set-face global SecondaryCursor      "%opt{black},%opt{blue}+fg"
 set-face global PrimaryCursorEol     "%opt{black},%opt{fg}+fg"
