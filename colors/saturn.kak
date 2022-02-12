@@ -22,18 +22,22 @@ declare-option str brmagenta         'rgb:8787AF'
 declare-option str brcyan            'rgb:5FAFAF'
 declare-option str brwhite           'rgb:FFFFFF'
 
-declare-option str bg_info           'rgb:262626'
-declare-option str bg_warning        'rgb:878700'
-declare-option str bg_error          'rgb:AF5F00'
-
 declare-option str hotpink           'rgb:D75FAF'
-
-declare-option str bg_info_inlay     'rgba:5F875F24'
-declare-option str bg_error_inlay    'rgba:AF5F5F24'
-declare-option str bg_warning_inlay  'rgba:AF870024'
 
 declare-option str bg_sel_p          'rgba:5FAFAF32'
 declare-option str bg_sel_s          'rgba:87AFD716'
+
+declare-option str bg_info           'rgb:262626'
+declare-option str bg_warning        'rgb:878700'
+declare-option str bg_error          'rgb:AF5F00'
+declare-option str fg_error_inlay    'rgb:D7875F'
+declare-option str bg_error_inlay    'rgba:AF5F5F24'
+declare-option str fg_warning_inlay  'rgb:D7AF5F'
+declare-option str bg_warning_inlay  'rgba:AF870024'
+declare-option str fg_info_inlay     'rgb:87AF87'
+declare-option str bg_info_inlay     'rgba:5F875F24'
+declare-option str fg_hint_inlay     'rgb:87AF87'
+declare-option str bg_hint_inlay     'rgba:5F875F24'
 
 declare-option str bg_ref            'rgba:A8A8A840'
 
@@ -100,10 +104,10 @@ set-face global MatchingChar         "%opt{hotpink},%opt{bg_br}+bF"
 
 # kak-lsp
 set-face global LineFlagErrors            "%opt{brred}"
-set-face global DiagnosticError           "%opt{brred},%opt{bg_warning_inlay}+uc"
-set-face global DiagnosticWarning         "%opt{bryellow},%opt{bg_warning_inlay}"
-set-face global DiagnosticHint            "%opt{bryellow},%opt{bg_warning_inlay}"
-set-face global DiagnosticInfo            "%opt{bryellow},%opt{bg_warning_inlay}"
+set-face global DiagnosticError           "%opt{fg_error_inlay},%opt{bg_error_inlay}+uc"
+set-face global DiagnosticWarning         "%opt{fg_warning_inlay},%opt{bg_warning_inlay}+uc"
+set-face global DiagnosticHint            "%opt{fg_hint_inlay},%opt{bg_hint_inlay}+uc"
+set-face global DiagnosticInfo            "%opt{fg_info_inlay},%opt{bg_info_inlay}+uc"
 set-face global Reference                 "default,%opt{bg_ref}"
 set-face global ReferenceBind             +bu@Reference
 set-face global InfoDefault               Information
@@ -116,8 +120,8 @@ set-face global InfoLinkMono              header
 set-face global InfoMono                  mono
 set-face global InfoRule                  comment
 set-face global InfoDiagnosticError       "%opt{brred}"
-set-face global InfoDiagnosticHint        "%opt{brblue}"
-set-face global InfoDiagnosticInformation Information
+set-face global InfoDiagnosticHint        "%opt{brgreen}"
+set-face global InfoDiagnosticInformation "%opt{brblue}"
 set-face global InfoDiagnosticWarning     "%opt{bryellow}"
 
 # ui.kak (https://github.com/kkga/ui.kak)
