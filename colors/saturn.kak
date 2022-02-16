@@ -104,10 +104,10 @@ set-face global MatchingChar         "%opt{hotpink},%opt{bg_br}+bF"
 
 # kak-lsp
 set-face global LineFlagErrors            "%opt{brred}"
-set-face global DiagnosticError           "%opt{fg_error_inlay},%opt{bg_error_inlay}+uc"
-set-face global DiagnosticWarning         "%opt{fg_warning_inlay},%opt{bg_warning_inlay}+uc"
-set-face global DiagnosticHint            "%opt{fg_hint_inlay},%opt{bg_hint_inlay}+uc"
-set-face global DiagnosticInfo            "%opt{fg_info_inlay},%opt{bg_info_inlay}+uc"
+set-face global DiagnosticError           "%opt{fg_error_inlay},%opt{bg_error_inlay}"
+set-face global DiagnosticWarning         "%opt{fg_warning_inlay},%opt{bg_warning_inlay}"
+set-face global DiagnosticHint            "%opt{fg_hint_inlay},%opt{bg_hint_inlay}"
+set-face global DiagnosticInfo            "%opt{fg_info_inlay},%opt{bg_info_inlay}"
 set-face global Reference                 "default,%opt{bg_ref}"
 set-face global ReferenceBind             +bu@Reference
 set-face global InfoDefault               Information
