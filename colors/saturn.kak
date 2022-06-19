@@ -2,6 +2,7 @@
 
 declare-option str fg                'rgb:A8A8A8'
 declare-option str fg_dim            'rgb:A8A8A8'
+declare-option str fg_alt            'rgb:87AFAF'
 declare-option str bg                'rgb:121212'
 declare-option str bg_alt            'rgb:1C1C1C'
 declare-option str bg_br             'rgb:303030'
@@ -49,7 +50,7 @@ set-face global variable             "%opt{yellow}"
 set-face global module               "%opt{cyan}"
 set-face global function             "%opt{fg}+b"
 set-face global string               "%opt{green}"
-set-face global keyword              "%opt{blue}"
+set-face global keyword              "%opt{fg_alt}"
 set-face global operator             "%opt{fg_dim}"
 set-face global attribute            "%opt{cyan}"
 set-face global comment              "%opt{white}"
