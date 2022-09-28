@@ -129,3 +129,6 @@ set-face global InfoDiagnosticWarning     "%opt{bryellow}"
 set-face global Search                    "%opt{brwhite}+iu"
 set-face global CursorLine                "default,%opt{bg_alt}"
 set-face global CursorColumn              "default,%opt{bg_alt}"
+
+# https://git.sr.ht/~raiguard/kak-live-grep
+set-face global LiveGrepMatch             Search
