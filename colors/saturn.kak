@@ -40,7 +40,7 @@ declare-option str bg_info_inlay     'rgba:5F875F24'
 declare-option str fg_hint_inlay     'rgb:87AF87'
 declare-option str bg_hint_inlay     'rgba:5F875F24'
 
-declare-option str bg_ref            'rgba:A8A8A840'
+declare-option str bg_ref            'rgba:A8A8A824'
 
 # CODE
 
